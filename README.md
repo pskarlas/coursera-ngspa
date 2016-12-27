@@ -1,2 +1,2 @@
 # coursera-ngspa
-Repo for the assignements
+Repo for the assignments
