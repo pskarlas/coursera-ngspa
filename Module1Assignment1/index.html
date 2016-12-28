@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
-      .message { font-size: 1.3em; font-weight: bold; }
+      .message, .answered, .empty { font-size: 1.3em; font-weight: bold; }
+      .answered { color: lime;}
+      .empty {color: red;}
     </style>
     
   </head>
-<body ng-controller="mainCtrl">
-   <div class="container" >
-     <h1>Lunch Checker</h1>
-         <div class="form-group">
-             <input id="lunch-menu" type="text"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control" ng-model="lunchItems">
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default" ng-click="check(lunchItems)">Check If Too Much</button>
-         </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-           {{message}}
-         </div>
-   </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="./app.js"></script>
-</body>
+  <body ng-controller="mainCtrl">
+    <div class="container" >
+      <h1>Lunch Checker</h1>
+          <div class="form-group">
+              <input id="lunch-menu" type="text"
+              placeholder="list comma separated dishes you usually have for lunch"
+              class="form-control" ng-model="lunchItems">
+          </div>
+          <div class="form-group">
+              <button class="btn btn-default" ng-click="check(lunchItems)">Check If Too Much</button>
+          </div>
+          <div class="form-group message" ng-class="{answered: answered, empty: empty}">
+            <!-- Your message can go here. -->
+            {{message}}
+          </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+      <script src="./app.js"></script>
+  </body>
 </html>
