@@ -20,13 +20,13 @@
             $scope.message = "Enjoy!";
             $scope.empty = false;
             $scope.answered = true;
-            console.log($scope.correctArr);
+
 
            } else if ($scope.correctArr.length > 3) {
               $scope.message = "Too Much!";
               $scope.empty = false;
               $scope.answered = true;
-              console.log($scope.correctArr);
+
             } 
           }
         }
