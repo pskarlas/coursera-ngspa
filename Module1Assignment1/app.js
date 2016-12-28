@@ -5,8 +5,6 @@
 
     mainCtrl.$inject = ['$scope'];
      function mainCtrl($scope) {
-       $scope.itemArray = [];
-       $scope.finalArray = [];
        $scope.message = '';
        $scope.check = function(input) {
          if(!input) {
@@ -14,9 +12,9 @@
            $scope.empty = true;
            $scope.answered = false;
          } else {
-           $scope.itemArray = input.split(',');
-           // Don't take into account consecutive commas
-           $scope.correctArr = correctArray($scope.itemArray);
+           var tempArray = input.split(',');
+           //  do NOT consider and empty item
+           $scope.correctArr = correctArray(tempArray);
           
            if ($scope.correctArr.length <= 3 ) {
             $scope.message = "Enjoy!";
@@ -32,7 +30,7 @@
             } 
           }
         }
-        // Function that trims whitespace and selects non empty array items.
+        // do NOT consider and empty item
         function correctArray(arr) {
           var temp =[];	
 	        for (let i=0; i<arr.length; i++){
