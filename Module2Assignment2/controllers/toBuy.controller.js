@@ -15,5 +15,4 @@
         ShoppingListCheckOffService.buyItem(index);
       }
     }
-
 })();
