@@ -10,7 +10,7 @@
     //List of Shopping items to buy
     var toBuyItems = 
       [
-        {name: 'Biscuits', quantity: 10},
+        {name: 'Biscuit', quantity: 10},
         {name: 'Coffee', quantity: 2},
         {name: 'Sugar', quantity: 2},
         {name: 'Chocolate', quantity: 3},
