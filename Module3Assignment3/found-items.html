@@ -12,7 +12,7 @@
       <td>{{item.name}}</td>
       <td>{{item.short_name}}</td>
       <td>{{item.description}}</td>
-      <td><button class="btn btn-danger btn-xs" ng-click='list.deleteItem({index: $index})'>Don't want this one!</button></td>
+      <td><button class="btn btn-danger btn-xs" ng-click='list.deleteItem($index)'>Don't want this one!</button></td>
     </tr>
   </tbody>
 </table>

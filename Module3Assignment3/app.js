@@ -59,8 +59,6 @@ function NarrowItDownController(MenuSearchService) {
    }
  };
 
-
-
 //DIRECTIVE
 function foundItems() {
  var ddo = {
