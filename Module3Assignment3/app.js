@@ -67,10 +67,6 @@ function foundItems() {
    templateUrl: 'found-items.html',
    scope: {
      list: '=theItems',
-<<<<<<< HEAD
-=======
-     onRemove: '&'
->>>>>>> 71b7b1f7b987c6e7cba207e2383d8adb787be25e
    }
  }
  return ddo;
