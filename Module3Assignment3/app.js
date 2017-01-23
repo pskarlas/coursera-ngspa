@@ -66,10 +66,12 @@ function foundItems() {
  var ddo = {
    templateUrl: 'found-items.html',
    scope: {
-     list: '=theItems'
+     list: '=theItems',
    }
  }
  return ddo;
 };
+
+
  
 })();
