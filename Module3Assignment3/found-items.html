@@ -1,0 +1,19 @@
+<table class="table table-condensed" ng-if="list.found.length > 0">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Short Name</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='item in list.found'>
+      <td>{{item.name}}</td>
+      <td>{{item.short_name}}</td>
+      <td>{{item.description}}</td>
+      <td><button class="btn btn-danger btn-xs" ng-click='list.deleteItem($index)'>Don't want this one!</button></td>
+    </tr>
+  </tbody>
+</table>
+<div class="alert alert-warning" ng-if='list.found === 0' style="clear: both;">Nothing Found</div>
