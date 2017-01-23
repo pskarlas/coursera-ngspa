@@ -14,6 +14,7 @@ function NarrowItDownController(MenuSearchService) {
   //Search Item
   list.search = function(searchTerm) {
     if(searchTerm) {
+      list.found= list.found.splice(0, list.found.length);
         var promise = MenuSearchService.getMatchedMenuItems(searchTerm);
         promise.then(function(response){
           console.info(response);
@@ -63,7 +64,10 @@ function NarrowItDownController(MenuSearchService) {
 //DIRECTIVE
 function foundItems() {
  var ddo = {
-   templateUrl: 'found-items.html'
+   templateUrl: 'found-items.html',
+   scope: {
+     list: '=theItems'
+   }
  }
  return ddo;
 };
