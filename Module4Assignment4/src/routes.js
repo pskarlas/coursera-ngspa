@@ -12,6 +12,11 @@
         .state('home', {
           url: '/',
           templateUrl: 'src/templates/home.template.html',
+
+        })
+        .state('categories', {
+          url: '/categories',
+          templateUrl: 'src/templates/categorieslist.template.html',
           controller: 'MenuAppController as main',
           resolve: {
             categories: ['MenuDataService', function(MenuDataService){
