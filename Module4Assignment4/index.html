@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
     <!--<a ui-sref='home'>Home</a>-->
+    <loading-spinner></loading-spinner>
     <ui-view></ui-view>
+    </div>
 
 
     <!--<div class="container" ng-controller="MenuAppController as main">
@@ -27,6 +30,7 @@
     <!--Modules-->
     <script src="src/menuapp.module.js"></script>
     <script src="src/data.module.js"></script>
+    <script src="src/spinner/spinner.module.js"></script>
      <!-- Routes -->
     <script src="src/routes.js"></script>
     <!--Artifacts -->
@@ -35,6 +39,8 @@
     <script src="src/dishlist.controller.js"></script>
     <script src="src/components/categories.component.js"></script> 
     <script src="src/components/dishes.component.js"></script> 
+    <script src="src/spinner/spinner.component.js"></script> 
+
 
   </body>
 </html>

@@ -6,3 +6,10 @@
   color:yellow;
   text-decoration: none;
 }
+.loadingIcon {
+
+}
+
+.overlay{
+  position:static;
+}
