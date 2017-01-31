@@ -50,7 +50,7 @@ function NarrowItDownController(MenuSearchService) {
   
      return response.then(function(result) {
       for(var i=0; i < result.data.menu_items.length; i++) {
-         if (result.data.menu_items[i].description.match(searchTerm.toLowerCase())) {
+         if (result.data.menu_items[i].description.toLowerCase().match(searchTerm.toLowerCase())) {
            arrItems.push(result.data.menu_items[i]);
          }
        }

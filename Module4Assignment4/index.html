@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='menuApp'>
+  <head>
+    <title>Browse our Delicious menu</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--<a ui-sref='home'>Home</a>-->
+    <ui-view></ui-view>
+
+
+    <!--<div class="container" ng-controller="MenuAppController as main">
+      <div class="row">
+        <div class="col-md-12 text-md-center" style="padding-top:10px;">
+          <h3>Menu</h3>
+            <categories list="main.categories"></categories>
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--libraries-->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <!--Modules-->
+    <script src="src/menuapp.module.js"></script>
+    <script src="src/data.module.js"></script>
+     <!-- Routes -->
+    <script src="src/routes.js"></script>
+    <!--Artifacts -->
+    <script src="src/menudata.service.js"></script>
+    <script src="src/menuapp.controller.js"></script>
+    <script src="src/dishlist.controller.js"></script>
+    <script src="src/components/categories.component.js"></script> 
+    <script src="src/components/dishes.component.js"></script> 
+
+  </body>
+</html>

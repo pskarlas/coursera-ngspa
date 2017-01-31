@@ -1,0 +1,10 @@
+
+<ul class="list-group">
+  <li class="list-group-item active">Select a category</li>
+  <li class="list-group-item" ng-repeat="category in $ctrl.list" 
+      style="list-style-type: none; color: blue;"> 
+    
+      <a ui-sref="dishList({categoryShortName: category.short_name})">{{category.name}}</a>
+ 
+  </li>
+</ul>
